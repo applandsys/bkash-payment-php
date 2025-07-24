@@ -88,8 +88,8 @@ if (isset($_GET['paymentID'])) {
         updateOrder($insert_id, (array)$res);
 
         // ✅ Telegram Notification - ONLY PAYMENT SUCCESS MESSAGE
-        $botToken = '8015956654:AAHo_fBwXkzxe4P0I3NukzVPIegaQlaf8AY';
-        $chatId   = '7521566295';
+        $botToken = '';
+        $chatId   = '';
 
         $trxID    = $res->trxID ?? 'N/A';
         $amount   = $res->amount ?? 'N/A';
